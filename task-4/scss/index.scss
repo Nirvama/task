@@ -1,0 +1,76 @@
+$cyan:#5fc0cd;
+
+@mixin flex ($direction:row, $justify: space-between, $align: stretch, $flex: auto, $overflow: visible) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex: $flex;
+    overflow: $overflow;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    @include flex(column);
+    background-color: #eeeff3;
+}
+
+header {
+    background-color: $cyan;
+    color: white;
+    @include flex($align: center);
+    padding: 0 2%;
+    height: 5rem;
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.8rem;
+    }
+}
+
+%style {
+    margin: 1rem 0;
+    height: 4rem;
+    overflow: hidden;
+    
+    input {
+        margin-left: 4rem;
+        height: 4rem;
+        width: 100%;
+        font-size: 1.5rem;
+        border: 0;
+        outline: none;
+    }
+}
+
+.sign {
+    @extend %style;
+    background: white url(../img/phone.png) no-repeat 1rem center;
+    background-size: 1.3rem;
+}
+
+.password {
+    @extend %style;
+    background: white url(../img/locked.png) no-repeat 1rem center;
+    background-size: 1.3rem;
+}
+
+button {
+    background-color: $cyan;
+    color: white;
+    border: none;
+    height: 5rem;
+    font-size: 1.8rem;
+    letter-spacing: 1rem;
+    outline: none;
+}
+
+#forget {
+    color: $cyan;
+    margin: 1rem;
+    align-self: flex-end;
+}

@@ -1,8 +1,8 @@
 $blue:#68cdd5;
 
 
-@mixin flex ($display:flex, $direction:row, $justify:space-between, $align:stretch, $flex:auto, $overflow: visible) {
-	display: $display;
+@mixin flex ($direction:row, $justify:space-between, $align:stretch, $flex:auto, $overflow: visible) {
+	display: flex;
 	flex-direction: $direction;
 	justify-content: $justify;
 	align-items: $align;
