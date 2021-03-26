@@ -2,4 +2,5 @@
     "recommendations": [
         "msjsdiag.debugger-for-chrome"
     ]
+    "easysass.targetDir": "~/../css",
 }

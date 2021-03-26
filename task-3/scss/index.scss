@@ -16,7 +16,7 @@ html {
 
 body {
 	background-color: $blue;
-	@include flex($direction: column,$align: center);
+	@include flex($direction: column,$align: center, $overflow:hidden);
 
 	.arrow {
 		margin: 5% 0 0 7%;
