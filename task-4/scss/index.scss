@@ -38,12 +38,14 @@ header {
     overflow: hidden;
     
     input {
-        margin-left: 4rem;
-        height: 4rem;
+        margin : 1rem 0 1rem 4rem;
+        padding-left: 2rem;
+        height: 2rem;
         width: 100%;
         font-size: 1.5rem;
         border: 0;
         outline: none;
+        border-left: #eeeff3 solid 2px;
     }
 }
 
