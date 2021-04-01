@@ -13,6 +13,18 @@
         height: 60%;
         position: relative;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        
+        .pink {
+            display: inline-block;
+            background-color: pink;
+            width: 100px;
+            height: 50px;
+            border: black solid 2px;
+        }
 
         .x {
             background-color: crimson;

@@ -12,11 +12,13 @@ $blue:#68cdd5;
 
 html {
 	font-size: 62.5%;
+	height: 100%;
 }
 
 body {
+	height: 100%;
 	background-color: $blue;
-	@include flex($direction: column, $align: center, $overflow:auto);
+	@include flex($direction: column,$justify: space-around, $align: center, $overflow:auto);
 
 	.arrow {
 		margin: 5% 0 0 7%;
@@ -36,14 +38,13 @@ body {
 	}
 
 	.describe {
-		margin-top: 20%;
+		margin-top: 5rem;
 		max-width: 85%;
 	}
 
 	.icon {
-		margin-top: 10%;
-		width: 90%;
-		@include flex($justify: space-around);
+		width: 85%;
+		@include flex($align: center)
 
 		.icon-1,
 		.icon-2 {
