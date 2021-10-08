@@ -1,0 +1,25 @@
+@mixin flex ($direction:row, $justify:space-between, $align:stretch, $overflow:visible) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    overflow: $overflow;
+}
+
+$cyan: rgb(41, 189, 224);
+$skyblue: rgb(116,212,235);
+$orange: rgb(251, 180, 53);
+$snow: rgb(240, 240, 240);
+$aqua: rgb(188, 233, 245);
+$outline: #d7d7d7;
+$gray: rgb(154, 154, 154);
+$light-orange: rgb(255, 180, 0);
+$lighter-orange: rgb(255, 200, 101);
+$teal: rgb(131, 176, 154);
+$time: rgb(196,196,196);
+$day: rgb(166,166,166);
+
+html {
+    font-size: 62.5%;
+    min-width: 320px;
+}

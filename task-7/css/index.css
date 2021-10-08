@@ -1,0 +1,133 @@
+html {
+  font-size: 62.5%;
+  min-width: 320px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  height: 4rem;
+  width: 100%;
+  background-color: #29bde0;
+  z-index: 1;
+}
+
+nav .menu {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(../img/menu.png) no-repeat center center;
+  background-size: contain;
+}
+
+main {
+  position: absolute;
+  top: 4rem;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: auto;
+}
+
+main .title {
+  width: 100%;
+  height: 5rem;
+  border: 1px #d7d7d7 solid;
+  background: white url(../img/gray-arrow.png) no-repeat 98% center;
+  background-size: 1.5rem 2rem;
+  text-align: center;
+  line-height: 5rem;
+  font-size: 2rem;
+}
+
+main .title a {
+  color: #9a9a9a;
+}
+
+main .section {
+  width: 100%;
+  height: 100%;
+  margin-top: 1.5rem;
+  border: 1px #d7d7d7 solid;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: auto;
+  position: relative;
+}
+
+main .section .name {
+  width: 100%;
+  height: 6rem;
+  border-bottom: #fbb435 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fbb435;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem 0;
+}
+
+main .section .version {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+
+main .section .version a {
+  width: 90%;
+  height: 8rem;
+  line-height: 8rem;
+  color: white;
+  font-size: 1.5rem;
+  background-color: #29bde0;
+}
+
+main .section .version span {
+  margin: 1rem auto;
+  font-size: 1.2rem;
+  color: #9a9a9a;
+}
+
+main .section .next-arrow {
+  position: absolute;
+  top: 50%;
+  right: 0rem;
+  margin-top: -0.5rem;
+  border: 1rem solid transparent;
+  border-left-color: #fbb435;
+}
+
+main .section ul {
+  margin-bottom: 0.6rem;
+}
+
+main .section ul li {
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 0.3rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #9a9a9a;
+}
+
+main .section ul li:first-child {
+  background-color: #29bde0;
+}

@@ -1,5 +1,8 @@
+$gray:#b1b1b1;
+
 html {
     font-size: 62.5%;
+    min-width: 320px;
 }
 
 @mixin flex ($direction:row, $justify:space-between, $align:stretch, $flex: auto, $overflow: visible) {
@@ -63,7 +66,98 @@ main {
     width: 100%;
     top: 3rem;
     bottom: 4rem;
-    overflow-y: auto;
+    overflow: auto;
+
+    .inquire {
+        width: 100%;
+        height: 3rem;
+        letter-spacing: -5px;
+        border-bottom: 1px #e1e5e7 solid;
+    }
+
+    .btn-group {
+        letter-spacing: normal;
+        display: inline-block;
+        width: 33.3%;
+        text-align: center;
+        position: static;
+
+        &:nth-child(n+2) {
+            border-left: 2px transparent solid;
+            border-image: linear-gradient(#fff, #e1e5e7, #fff)1;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            color: $gray;
+
+            &:hover,&:active,&:visited,&:link,&:focus {
+                color: $gray;
+                box-shadow: none;
+            }
+        }
+
+        ul {
+            width: 100%;
+
+            li {
+                width: 100%;
+            }
+        }
+    }
+
+    .contain {
+        position: relative;
+    }
+
+    .content {
+        position: relative;
+        border-bottom: 1px #e1e5e7 solid;
+        height: 7rem;
+        width: 100%;
+        @include flex($align:center);
+
+        ul {
+            margin-left: 1rem;
+            overflow: hidden;
+            min-width: 10rem;
+
+            li {
+                padding-left: 1.8rem;
+            }
+            
+            li:first-child{
+                color: $gray;
+                background: url(../img/4.png) no-repeat center left;
+                background-size: contain;
+            }
+
+            li:nth-child(2){
+                color: black;
+                font-weight: 500;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+            li:last-child{
+                color: $gray;
+                background: url(../img/3.png) no-repeat center left;
+                background-size: contain;
+            }
+        }
+
+        .price {
+            margin-right: 1rem;
+            padding-right: 1.5rem;
+            right: 0.5rem;
+            color: red;
+            background: url(../img/right.png) no-repeat center right;
+            background-size: 1rem 1.5rem;
+            white-space: nowrap;
+        }
+    }
 }
 
 footer {

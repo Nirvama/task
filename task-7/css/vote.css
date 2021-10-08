@@ -1,0 +1,218 @@
+html {
+  font-size: 62.5%;
+  min-width: 320px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: visible;
+  background-color: #29bde0;
+  width: 100%;
+  padding: 1rem 2rem 0.5rem 2rem;
+  position: fixed;
+  z-index: 1;
+}
+
+header a:first-child {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../img/vote-menu.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+header p {
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+}
+
+header a:last-child {
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../img/back.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+main {
+  position: absolute;
+  width: 100%;
+  top: 4.2rem;
+  bottom: 5.9rem;
+  background-color: #29bde0;
+  overflow-y: auto;
+}
+
+main .roof {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  overflow: visible;
+  width: 100%;
+  height: 6rem;
+}
+
+main .roof .hint {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: visible;
+  background-color: #bce9f5;
+  flex: 1 1 3.5rem;
+}
+
+main .roof .hint span {
+  font-size: 1.2rem;
+  padding-left: 1.5rem;
+}
+
+main .roof .hint .bg-music {
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../img/audio.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0.7rem;
+}
+
+main .roof .hint .bg-music audio {
+  position: absolute;
+  transform: scale(0.6) rotate(270deg);
+  top: -8rem;
+  right: -13rem;
+  opacity: 0;
+}
+
+main .roof .click {
+  flex: 1 1 2.5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  font-size: 1rem;
+  color: white;
+}
+
+main .roof .click:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  align-self: flex-start;
+  border: 0.5rem solid transparent;
+  border-top-color: #bce9f5;
+}
+
+main .list {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  padding: 1rem 1.5rem;
+}
+
+main .list .item {
+  margin: 0.4rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: visible;
+  width: 6rem;
+  height: 9rem;
+}
+
+main .list .item .gamer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: visible;
+  justify-items: space-between;
+  background-color: #ffb400;
+  border: 0.3rem solid white;
+  width: 6rem;
+  height: 6rem;
+}
+
+main .list .item .gamer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+main .list .item .gamer .name {
+  flex: 4;
+  font-size: 1.5rem;
+}
+
+main .list .item .gamer .number {
+  flex: 1;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #83b09a;
+  width: 100%;
+}
+
+main .list .item .option {
+  display: flex;
+  justify-content: space-between;
+  visibility: hidden;
+}
+
+main .list .item .option a {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0.8rem 0.2rem;
+}
+
+main .list .item .option .label-1 {
+  background: url(../img/vote-1.png) no-repeat center center;
+  background-size: contain;
+}
+
+main .list .item .option .label-2 {
+  background: url(../img/vote-2.png) no-repeat center center;
+  background-size: contain;
+}
+
+main .list .item .option .label-3 {
+  background: url(../img/vote-3.png) no-repeat center center;
+  background-size: contain;
+}
+
+main .list .item .option .label-4 {
+  background: url(../img/vote-4.png) no-repeat center center;
+  background-size: contain;
+}
+
+main .list .item:hover .option {
+  visibility: visible;
+}
+
+footer {
+  background-color: #29bde0;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  padding: 1rem;
+  z-index: 1;
+}
+
+footer .btn {
+  background-color: #fbb438;
+  color: white;
+  font-size: 2rem;
+  width: 70%;
+}

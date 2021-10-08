@@ -1,0 +1,144 @@
+html {
+  font-size: 62.5%;
+  min-width: 320px;
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: #29bde0;
+  padding: 1rem 2rem 0.5rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: visible;
+  border-bottom: 1px solid #74d4eb;
+}
+
+header a:first-child {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url(../img/result-home.png) no-repeat;
+  background-size: contain;
+}
+
+header p {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0;
+}
+
+header a:last-child {
+  width: 2rem;
+  height: 2rem;
+  background: url(../img/result-help.png) no-repeat;
+  background-size: contain;
+}
+
+main {
+  position: absolute;
+  top: 4rem;
+  background-color: white;
+  bottom: 0;
+  padding-bottom: 5rem;
+  width: 100%;
+  overflow-y: auto;
+}
+
+main .cyan {
+  padding-top: 2rem;
+  background-color: #29bde0;
+}
+
+main .victory {
+  background: url(../img/evil-victory.png) no-repeat center center;
+  background-size: contain;
+  height: 9rem;
+  flex: none;
+}
+
+main p {
+  color: #ffc865;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 3rem;
+  box-sizing: content-box;
+  margin-bottom: 0;
+}
+
+main .date {
+  color: white;
+  font-size: 1.3rem;
+  padding: 1rem 3rem;
+  font-weight: lighter;
+  box-sizing: content-box;
+}
+
+main .history-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  overflow: visible;
+}
+
+main .history {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: visible;
+  flex-wrap: wrap;
+  padding: 1rem 3rem;
+  background-color: white;
+  border-top: 1px solid #c4c4c4;
+}
+
+main .history div {
+  padding: 0.3rem 0rem;
+}
+
+main .history .day {
+  flex-basis: 50%;
+  font-size: 1.5rem;
+}
+
+main .history .time {
+  flex-basis: 50%;
+  font-size: 1rem;
+  color: #c4c4c4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+main .history .night,
+main .history .light {
+  color: #a6a6a6;
+  flex-basis: 100%;
+  font-size: 1.2rem;
+}
+
+footer {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(41, 189, 224, 0.4);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: visible;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  height: 5rem;
+  bottom: 0;
+}
+
+footer .btn {
+  font-size: 1.6rem;
+  color: white;
+  width: 45%;
+  height: 80%;
+}

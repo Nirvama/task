@@ -1,0 +1,127 @@
+@import "_common";
+
+
+
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: $cyan;
+    padding: 1rem 2rem 0.5rem 2rem;
+    @include flex ($align: center);
+    border-bottom: 1px solid $skyblue;
+
+    a:first-child {
+        width: 2.5rem;
+        height: 2.5rem;
+        background: url(../img/result-home.png) no-repeat;
+        background-size: contain;
+    }
+
+    p {
+        font-size: 1.5rem;
+        color: white;
+        margin: 0;
+    }
+
+    a:last-child {
+        width: 2rem;
+        height: 2rem;
+        background: url(../img/result-help.png) no-repeat;
+        background-size: contain;
+    }
+}
+
+main {
+    position: absolute;
+    top: 4rem;
+    background-color: white;
+    bottom: 0;
+    padding-bottom: 5rem;
+    width: 100%;
+    overflow-y: auto;
+
+    .cyan {
+        padding-top: 2rem;
+        background-color: $cyan;
+    }
+
+    .victory {
+        background: url(../img/evil-victory.png) no-repeat center center;
+        background-size: contain;
+        height: 9rem;
+        flex: none;
+    }
+
+    p {
+        color: $lighter-orange;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 1rem 3rem;
+        box-sizing: content-box;
+        margin-bottom: 0;
+    }
+
+    .date {
+        color: white;
+        font-size: 1.3rem;
+        padding: 1rem 3rem;
+        font-weight: lighter;
+        box-sizing: content-box;
+    }
+
+    .history-list {
+        @include flex (column);
+    }
+
+    .history {
+        @include flex (row, space-between, center);
+        flex-wrap: wrap;
+        padding: 1rem 3rem;
+        background-color: white;
+        border-top: 1px solid $time;
+
+        div {
+            padding: 0.3rem 0rem;
+        }
+
+        .day {
+            flex-basis: 50%;
+            font-size: 1.5rem;
+        }
+
+        .time {
+            flex-basis: 50%;
+            font-size: 1rem;
+            color: $time;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+
+        .night,
+        .light {
+            color: $day;
+            flex-basis: 100%;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+footer {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: rgba(41, 189, 224, 0.4);
+    @include flex ($align:center);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    height: 5rem;
+    bottom: 0;
+
+    .btn {
+        font-size: 1.6rem;
+        color: white;
+        width: 45%;
+        height: 80%;
+    }
+}
