@@ -170,26 +170,23 @@ main .list .item .option a {
   width: 1.2rem;
   height: 1.2rem;
   margin: 0.8rem 0.2rem;
+  background-size: contain;
 }
 
 main .list .item .option .label-1 {
   background: url(../img/vote-1.png) no-repeat center center;
-  background-size: contain;
 }
 
 main .list .item .option .label-2 {
   background: url(../img/vote-2.png) no-repeat center center;
-  background-size: contain;
 }
 
 main .list .item .option .label-3 {
   background: url(../img/vote-3.png) no-repeat center center;
-  background-size: contain;
 }
 
 main .list .item .option .label-4 {
   background: url(../img/vote-4.png) no-repeat center center;
-  background-size: contain;
 }
 
 main .list .item:hover .option {
@@ -208,6 +205,7 @@ footer {
   overflow: visible;
   padding: 1rem;
   z-index: 1;
+  border-top: 1px cyan solid;
 }
 
 footer .btn {

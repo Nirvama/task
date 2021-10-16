@@ -143,26 +143,23 @@ main {
                     width: 1.2rem;
                     height: 1.2rem;
                     margin: 0.8rem 0.2rem;
+                    background-size: contain;
                 }
 
                 .label-1 {
-                    background: url(../img/vote-1.png) no-repeat center center;
-                    background-size: contain;
+                    background: url(../img/vote-1.png)no-repeat center center;
                 }
 
                 .label-2 {
-                    background: url(../img/vote-2.png) no-repeat center center;
-                    background-size: contain;
+                    background: url(../img/vote-2.png)no-repeat center center;
                 }
 
                 .label-3 {
-                    background: url(../img/vote-3.png) no-repeat center center;
-                    background-size: contain;
+                    background: url(../img/vote-3.png)no-repeat center center;
                 }
 
                 .label-4 {
-                    background: url(../img/vote-4.png) no-repeat center center;
-                    background-size: contain;
+                    background: url(../img/vote-4.png)no-repeat center center;
                 }
             }
 
@@ -183,6 +180,7 @@ footer {
     @include flex(row, center, center);
     padding: 1rem;
     z-index: 1;
+    border-top: 1px cyan solid;
 
     .btn {
         background-color: #fbb438;

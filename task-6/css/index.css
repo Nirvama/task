@@ -91,6 +91,7 @@ main .btn-group button:hover, main .btn-group button:active, main .btn-group but
 
 main .btn-group ul {
   width: 100%;
+  transform: translateX(5px);
 }
 
 main .btn-group ul li {

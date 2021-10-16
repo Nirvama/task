@@ -50,7 +50,6 @@ main {
         background: url(../img/evil-victory.png) no-repeat center center;
         background-size: contain;
         height: 9rem;
-        flex: none;
     }
 
     p {
@@ -58,7 +57,6 @@ main {
         font-size: 1.5rem;
         font-weight: 600;
         padding: 1rem 3rem;
-        box-sizing: content-box;
         margin-bottom: 0;
     }
 
@@ -67,7 +65,6 @@ main {
         font-size: 1.3rem;
         padding: 1rem 3rem;
         font-weight: lighter;
-        box-sizing: content-box;
     }
 
     .history-list {
@@ -96,7 +93,6 @@ main {
             color: $time;
             display: flex;
             justify-content: flex-end;
-            align-items: flex-start;
         }
 
         .night,
